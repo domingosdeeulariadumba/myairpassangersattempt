@@ -109,7 +109,7 @@ plt.plot(MA_12, color="black",
 plt.legend(fontsize = 18)
 
 
-    #What about seasonality?
+    # What about seasonality?
 
 def custom_periodogram(ts, detrend='linear', ax=None,
                        freq_range=(1/12, 1), color='b'):
@@ -170,8 +170,6 @@ def seasonal_plot(X, y, period, freq, ax=None):
     plt.legend(fontsize = 18, loc = 'best')
     
     return ax
-
-X_season = df.copy()
 
 X_season = df.copy()
 
@@ -348,26 +346,25 @@ plt.legend(fontsize = 14)
 plt.show()
 
     '''
-    In order to forecast the Number of Passengers ahead of 1960, for this case
-    until 1961, we decide to compute the Confidence Intervals (95% for its 
-    default value), so we can better visualize the forecasting accuracy.
-    '''
-
-
-    '''
     Forecasting for 1961 (12 months ahead), it is until
     december of this year.
     '''
 steps_12 = model.get_forecast(steps = len(test_data)+12)
 forecast_12 = steps_12.predicted_mean
-    
+
+
+    '''
+    In order to forecast the Number of Passengers ahead of 1960, for this case
+    until 1961, we decide to compute the Confidence Intervals (95% for its 
+    default value), so we can better visualize the forecasting accuracy.
+    '''
 c_i = steps_12.conf_int()
 lower_bound = c_i['lower train_set']
 upper_bound = c_i['upper train_set']
 period = c_i.index.values
 
     '''
-    Displaying the results.
+    Displaying the results with confidence interval.
     '''
     
 plt.plot(figsize=(16,10), dpi= 240)
