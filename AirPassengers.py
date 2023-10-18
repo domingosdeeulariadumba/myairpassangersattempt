@@ -65,7 +65,14 @@ plt.hlines(y=0, xmin=np.min(df.index), xmax=np.max(df.index), linewidth=4,
 plt.show()
 
 
-    ''' Stationarity CHECK '''
+    ''' CHECKING STATIONARITY '''
+
+    ''' In order to simplify the forecasting process, the time serie needs to be stationary. 
+    So, although we could take a conclusion about this detail from the prior plots, in some 
+    cases it may not  be that clear. That is, we need to check wether our data is non-stationary
+    or stationary to stress the visual analysis. It is done using statistical tests such as
+    Augmented Dickey-Fuller (ADF) Test and Kwiatkowski-Phillips-Schmidt-Shin (KPSS) Test. 
+    We'll implement the ADF method.'''
 
 def check_stationarity(df):
     
@@ -180,13 +187,6 @@ X_season['year'] = X_season['date'].dt.year
 X_season['month'] = X_season['date'].dt.month
 
 y = X_season['#Passengers']
-
-X_season["month"] = X_season['date'].dt.month
-
-X_season["year"] = X_season['date'].dt.year
-
-y_season = X_season['#Passengers']
-
 
 fig, ax = plt.subplots(figsize=(11, 6))
 seasonal_plot(X_season, y, period = 'year', freq = 'month')
