@@ -5,6 +5,7 @@ My take on air passengers time serie.
 SCOPE
 ![AirPassengers scope](https://github.com/domingosdeeulariadumba/airpassangersAGAIN/assets/110714056/56d1e9ec-2b9d-4b83-8f3d-3b6eb33aaa58)
 
+
 DATA DICTIONARY
 ![AirPassengers datadictionary](https://github.com/domingosdeeulariadumba/airpassangersAGAIN/assets/110714056/f9f93102-4718-4d86-b4bf-28824c92dc06)
 
@@ -12,8 +13,10 @@ DATA DICTIONARY
 GOAL
 ![AirPassengers goal](https://github.com/domingosdeeulariadumba/airpassangersAGAIN/assets/110714056/da22c177-4cc5-4ea6-ab08-195ef1e07059)
 
+
 APPROACH
 ![AirPassengers approach](https://github.com/domingosdeeulariadumba/airpassangersAGAIN/assets/110714056/0f11931a-405c-4d43-88d6-459638a2318f)
+
 
 TOOLS
 ![AirPassengers tools](https://github.com/domingosdeeulariadumba/airpassangersAGAIN/assets/110714056/13041486-9e01-4373-ba9e-231f230fb5ec)
