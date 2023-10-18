@@ -20,6 +20,7 @@ TOOLS
 
 
 REFERENCES
+
 https://otexts.com/fpp2/
 https://online.stat.psu.edu/stat510/lesson/5/5.1#:~:text=The%20additive%20model%20is%20useful,seasonal%20variation%20increases%20over%20time.
 https://www.kaggle.com/code/ryanholbrook/linear-regression-with-time-series
