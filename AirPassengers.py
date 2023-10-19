@@ -16,7 +16,8 @@ from pmdarima import auto_arima
 from statsmodels.tsa.stattools import adfuller as adf
 from statsmodels.tsa.seasonal import seasonal_decompose
 from statsmodels.graphics.tsaplots import plot_pacf
-from scipy import stats, linregress
+from scipy import stats
+from scipy.stats import linregress
 from scipy.signal import periodogram
 import seaborn as sb
 import matplotlib.pyplot as plt
